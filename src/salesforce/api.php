@@ -179,6 +179,15 @@ class Api
      * @param string $query
      * @return array
      */
+    public function search(string $query)
+    {
+        return $this->fetch("{$this->servicesEndpoint}/search", ['q' => $query], 'GET', 'application/x-www-form-urlencoded');
+    }    
+    
+    /**
+     * @param string $query
+     * @return array
+     */
     public function query(string $query)
     {
         return $this->fetch("{$this->servicesEndpoint}/query", ['q' => $query], 'GET', 'application/x-www-form-urlencoded');
