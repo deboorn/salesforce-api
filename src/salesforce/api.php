@@ -126,9 +126,7 @@ class Api
         if ($auth) {
             $headers[] = "Authorization: Bearer {$this->session['access_token']}";
         }
-
-        var_dump($data, $headers);
-
+        
         $context = stream_context_create(array(
             'http' => array(
                 'header'        => implode("\r\n", $headers) . "\r\n",
@@ -146,9 +144,6 @@ class Api
         $apiUrl = $this->baseUrl . $path;
 
         $r = @file_get_contents($apiUrl, false, $context);
-
-        var_dump($apiUrl, $r, $http_response_header);
-
         $r = json_decode($r, true);
 
         return $r;
