@@ -8,7 +8,7 @@
 How to Install
 ---------------
 
-Install the `deboorn/escrow-api` package
+Install the `deboorn/salesforce-api` package
 
 ```php
 require_one 'src/salesforce/api.php'
