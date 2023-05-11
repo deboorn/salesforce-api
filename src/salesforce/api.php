@@ -60,7 +60,7 @@ class Api
     /**
      * @var string
      */
-    protected $servicesEndpoint = '/services/data/v39.0';
+    protected $servicesEndpoint = '/services/data/v56.0';
 
 
     /**
