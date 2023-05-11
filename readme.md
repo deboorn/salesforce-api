@@ -11,7 +11,7 @@ How to Install
 Install the `deboorn/salesforce-api` package
 
 ```php
-require_one 'src/salesforce/api.php'
+require_once 'src/salesforce/api.php'
 ```
 
 Why?
